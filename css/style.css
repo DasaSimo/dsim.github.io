@@ -22,12 +22,12 @@
 }  
 
 .fs {
-    font-size: 40px;  
+    font-size: 25px;  
 }
 
 .fa-linkedin {  
-    background: #007bb5;  
-    color: white;  
+    background: white;  
+    color: black;  
 }  
 
 .fa-skype {  
@@ -35,7 +35,10 @@
     color: white;  
 }  
 
-.fa-github   
+.fa-github {  
+    background: white;  
+    color: black;
+}      
     
 .fa:hover {  
       opacity: 0.9;  
