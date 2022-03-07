@@ -46,19 +46,19 @@
 } 
   
 h1 {
-    font-family: "Playfair Display";
-    font-size: 60px;
+    font-family: "Playfair Display",sans-serif;
+    /* font-size:xx-large;  */
     font-weight: 800;
     background-color: white;
 }
  h2 {
-    font-family: "Playfair Display";
-    font-size: 40px;
+    font-family: "Playfair Display", sans-serif;
+    font-size: xx-large;
     font-weight: 500;
  }
 
 h5 {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", sans-serif;
 } 
 .header {
     padding-left: 30px;
