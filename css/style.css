@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 .parallax {
     /* The image used */
@@ -9,9 +9,10 @@
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position-x:0px; 
+    background-position-y: 50px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
 .fa {  
@@ -39,13 +40,31 @@
     background: white;  
     color: black;
 }      
-    
+
 .fa:hover {  
       opacity: 0.9;  
 } 
-
+  
 h1 {
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-weight: 800;
     background-color: white;
-
 }
+ h2 {
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-weight: 500;
+ }
 
+h5 {
+    font-family: "Playfair Display";
+} 
+.header {
+    padding-left: 30px;
+    position:fixed; 
+    width:100%; 
+    left:0; 
+    top:0; 
+    z-index:1;
+}
