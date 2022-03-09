@@ -14,14 +14,14 @@
 
 <body>
   <div class="row  header">
-    <div class="col-md-4">
-      <h2>dasa simova</h2>
+    <div class="col-sm-4">
+      <h2 id="me">dasa simova</h2>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-sm-6">
     </div>
 
-    <div class="col-md-2">
+    <div class="col-sm-2">
       <div class="fs">
         <a href="https://www.linkedin.com/in/dasasimo/" style="text-decoration:none" class="fa fa-linkedin"></a>
 
@@ -37,10 +37,10 @@
 
   <div id="content">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-4">
       </div>
 
-      <div class="col-md-4 justify-content-center align-items-center text-center"><br>
+      <div class="col-sm-12 justify-content-center align-items-center text-center"><br>
            
         <h1 class="display-5"> &HorizontalLine;&HorizontalLine;&HorizontalLine; My Projects
           &HorizontalLine;&HorizontalLine;&HorizontalLine; <p>&nbsp;<br>
@@ -48,7 +48,7 @@
         </h1>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-sm-4">
       </div>
 
     </div>
@@ -60,17 +60,17 @@
 
     </div>
     <div class="row">
-      <div class="col-md-2 col-sm-1">
+      <div class="col-sm-2 col-sm-1">
         <h5></h5>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <img src="Images/weather.jpg" width=200 />
         <h5><a href="https://dasasimo.github.io/Web-Design-Challenge/WebVisualizations/index.html"
             style="text-decoration:none" " target=" _blank">Weather vs Latitude</a></h5>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-sm-6">
 
         The purpose of this project was to analyze how the weather changes as we approach the equator. To answer this
         question I used a dataset of more than 500 cities across the world randomly selected using Pyhton library
@@ -81,19 +81,19 @@
 
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <h5></h5>
       </div>
       <br><br><br><br><br>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-sm-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <img src="Images/bellybutton.jpg" width=200 />
         <h5><a href="https://dasasimo.github.io/Interactive-Web-Visualization/Biodiversity/index.html"
             style="text-decoration:none" target="_blank">Biodiversity Dashboard</a></h5>
@@ -101,7 +101,7 @@
       </div>
 
       <br>
-      <div class="col-md-6">
+      <div class="col-sm-6">
 
         In the following exhibit I used the Belly Button Biodiversity dataset to build an interactive dashboard to
         explore and document a variety of microbes that colonize human navels.
@@ -114,26 +114,26 @@
 
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <h5></h5>
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <h5></h5>
       </div>
       <br><br><br><br><br>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-sm-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <img src="Images/travel.jpg" width=200 />
         <h5><a href="https://nationalpark-app.herokuapp.com/" style="text-decoration:none" target="_blank">National
             Parks</a></h5>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-sm-6">
 
         Our aim was to provide useful information for prospective travelers to National Parks. You can find
         information on all 464 National Public Service Parks in US, including 63 with 'National Park' designation, as
@@ -145,19 +145,19 @@
 
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <h5></h5>
       </div>
       <br><br><br><br><br>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-sm-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <img src="Images/machine_learning.jpg" width=200 />
         <h5><a href="https://wine-quality-testing.herokuapp.com/index.html" style="text-decoration:none"
             target="_blank">Machine
@@ -165,7 +165,7 @@
         </h5>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-sm-6">
 
         In this group project we created a model that would predict the quality of white and red wine creation using
         supervised machine learning. In our models we analyzed the effects of selected features based on
@@ -183,16 +183,15 @@
 
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
       </div>
 
-      <div class="col-md-2">
+      <div class="col-sm-2">
         <h5></h5>
       </div>
       <br><br><br><br><br>
     </div>
 
-    <!--<p style = color:orange>The world of projects</p>-->
     <br><br><br>
 
     <div class="row">
@@ -218,13 +217,22 @@
   </div>
 
   <script>
-    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    
     window.onscroll = function () { parallax() };
 
     function parallax() {
       var parallax = document.getElementById("parallax");
-      console.log(parallax)
       parallax.style.top = -(window.pageYOffset / 4) + 'px';
+      var cont = document.getElementById("content")
+      var position = cont.getBoundingClientRect();
+      var y = position.top;
+      var me = document.getElementById("me");
+      if (y>5){
+        me.style.color="white";
+      } else {
+        me.style.color ="#272779" 
+      }
+    
     }
   </script>
 </body>
