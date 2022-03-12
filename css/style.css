@@ -100,3 +100,7 @@ h5 {
     top:0; 
     z-index:1;
 }
+
+img {
+    border-radius: 8px;
+  }
